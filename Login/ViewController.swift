@@ -12,7 +12,6 @@ import SnapKit
     final class ViewController: UIViewController, ConstraintRelatableTarget {
         // MARK: - UI
         
-        
         private let vectorView: UIImageView = {
             let vectorView = UIImageView()
             vectorView.image = .vector2
@@ -228,7 +227,6 @@ import SnapKit
                 make.top.equalTo(emailtextField.snp.bottom).offset(20)
                 make.left.right.equalTo(emailtextField)
                 make.height.equalTo(40)
-                
             }
             
             imageView.snp.makeConstraints { make in
@@ -247,7 +245,6 @@ import SnapKit
                 make.top.equalTo(passwordtextField.snp.bottom).offset(40)
                 make.left.right.equalTo(emailtextField)
                 make.height.equalTo(40)
-                
             }
             
             forgotPassword.snp.makeConstraints { make in
@@ -259,6 +256,7 @@ import SnapKit
                 make.bottom.equalTo(vectorView.snp.top).offset(182)
                 make.centerX.equalToSuperview()
             }
+            
             facebookInBtn.snp.makeConstraints { make in
                 make.bottom.equalToSuperview().offset(-161)
                 make.left.equalToSuperview().offset(30)
